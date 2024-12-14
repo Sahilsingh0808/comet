@@ -1,0 +1,12 @@
+comet/
+├── comet/                       # Package directory
+│   ├── __init__.py              # Initialize the package
+│   ├── cli.py                   # Main CLI entry point
+│   ├── utils.py                 # Git-related utility functions
+│   ├── openai_helpers.py        # Functions for interacting with OpenAI
+│   ├── jira.py                  # Jira-related functionality
+├── setup.py                     # Package setup script
+├── requirements.txt             # Dependencies
+├── README.md                    # Project description
+├── LICENSE                      # License file
+└── .env.example                 # Example environment configuration

@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "comet_labs"                 # Name of your package
+version = "0.1.1"                 # Version
+description = "A Python package for comet-related functionalities"
+authors = ["Sahil <sahil85.10s@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"                   # Python version compatibility
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+# Map the source folder to the package
+packages = [
+    { include = "comet_py" }
+]
