@@ -1,6 +1,6 @@
 [tool.poetry]
-name = "comet_labs"                 # Name of your package
-version = "0.1.3"                 # Version
+name = "comet_labs"
+version = "0.1.4"
 description = "A Python package for comet-related functionalities"
 authors = ["Sahil <sahil85.10s@gmail.com>"]
 license = "MIT"
@@ -8,6 +8,7 @@ readme = "README.md"
 homepage = "https://github.com/Sahilsingh0808/comet"
 repository = "https://github.com/Sahilsingh0808/comet"
 keywords = ["git", "ai", "commit-messages"]
+readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.8"                   # Python version compatibility
