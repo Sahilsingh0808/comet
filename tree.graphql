@@ -17,9 +17,6 @@
 │   │   ├── cli.cpython-311.pyc
 │   │   └── __init__.cpython-311.pyc
 │   └── utils.py
-├── dist
-│   ├── comet_labs-0.1.1-py3-none-any.whl
-│   └── comet_labs-0.1.1.tar.gz
 ├── LICENSE
 ├── main.py
 ├── pyproject.toml
