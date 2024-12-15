@@ -1,0 +1,51 @@
+name: Publish Python Package to PyPI
+
+on:
+  push:
+    branches:
+      - main  # Trigger workflow on push to the main branch
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-and-publish:
+    name: Build and Publish Package
+    runs-on: ubuntu-latest
+
+    steps:
+    # Checkout the code from your repository
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    # Set up Python environment
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.9
+
+    # Install dependencies
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install build twine
+
+    # Build the Python package
+    - name: Build the package
+      run: python -m build
+
+    # Publish to PyPI
+    - name: Publish to PyPI
+      if: github.ref == 'refs/heads/main'  # Only publish from the main branch
+      env:
+        TWINE_USERNAME: __token__  # Use the PyPI token for authentication
+        TWINE_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}  # Securely stored in GitHub Secrets
+      run: python -m twine upload dist/*
+
+    # Publish to TestPyPI (optional)
+    - name: Publish to TestPyPI
+      if: github.ref != 'refs/heads/main'  # Only publish to TestPyPI for non-main branches
+      env:
+        TWINE_USERNAME: __token__
+        TWINE_PASSWORD: ${{ secrets.TEST_PYPI_API_TOKEN }}
+      run: python -m twine upload --repository-url https://test.pypi.org/legacy/ dist/*

@@ -1,12 +1,29 @@
-comet/
-├── comet/                       # Package directory
-│   ├── __init__.py              # Initialize the package
-│   ├── cli.py                   # Main CLI entry point
-│   ├── utils.py                 # Git-related utility functions
-│   ├── openai_helpers.py        # Functions for interacting with OpenAI
-│   ├── jira.py                  # Jira-related functionality
-├── setup.py                     # Package setup script
-├── requirements.txt             # Dependencies
-├── README.md                    # Project description
-├── LICENSE                      # License file
-└── .env.example                 # Example environment configuration
+.
+├── build
+│   ├── bdist.linux-x86_64
+│   └── lib
+│       └── comet
+│           ├── ai_helpers.py
+│           ├── cli.py
+│           ├── __init__.py
+│           ├── jira.py
+│           └── utils.py
+├── comet_labs
+│   ├── ai_helpers.py
+│   ├── cli.py
+│   ├── __init__.py
+│   ├── jira.py
+│   ├── __pycache__
+│   │   ├── cli.cpython-311.pyc
+│   │   └── __init__.cpython-311.pyc
+│   └── utils.py
+├── dist
+│   ├── comet_labs-0.1.1-py3-none-any.whl
+│   └── comet_labs-0.1.1.tar.gz
+├── LICENSE
+├── main.py
+├── pyproject.toml
+├── README.md
+├── requirements.txt
+├── setup.py
+└── tree.graphql
