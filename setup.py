@@ -11,6 +11,7 @@ setup(
         "openai",
         "python-dotenv",
         "requests",
+        "textblob>=0.17.1",
         # Add other dependencies here
     ],
     entry_points={

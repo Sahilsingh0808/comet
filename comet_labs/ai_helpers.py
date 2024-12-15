@@ -3,15 +3,31 @@ import openai
 import json
 import requests
 import re
-from transformers import AutoModelForCausalLM, AutoTokenizer
 from .prompts import generate_prompt_xml
 from pathlib import Path
 from dotenv import load_dotenv, get_key
-from transformers import AutoTokenizer, AutoModelForCausalLM
-from transformers import pipeline
 from textblob import TextBlob
 import nltk
-nltk.download('punkt_tab')
+import sys
+import os
+
+def download_nltk_data_quietly(package):
+    """
+    Downloads NLTK data without showing logs.
+    """
+    original_stdout = sys.stdout  # Save original stdout
+    original_stderr = sys.stderr  # Save original stderr
+    sys.stdout = open(os.devnull, 'w')  # Redirect stdout to null
+    sys.stderr = open(os.devnull, 'w')  # Redirect stderr to null
+    try:
+        nltk.download(package, quiet=True)
+    finally:
+        sys.stdout.close()
+        sys.stderr.close()
+        sys.stdout = original_stdout  # Restore original stdout
+        sys.stderr = original_stderr  # Restore original stderr
+
+download_nltk_data_quietly("punkt")
 
 # Define the path to your .env file
 ENV_FILE = str(Path(__file__).parent.parent / ".env")
