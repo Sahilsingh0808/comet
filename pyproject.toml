@@ -8,7 +8,6 @@ readme = "README.md"
 homepage = "https://github.com/Sahilsingh0808/comet"
 repository = "https://github.com/Sahilsingh0808/comet"
 keywords = ["git", "ai", "commit-messages"]
-readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.8"                   # Python version compatibility
