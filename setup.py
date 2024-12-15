@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="comet_labs",  # Your package name
-    version="0.1.2",
+    version="0.1.3",
     description="A CLI tool for AI-driven commit messages and Jira integration",
     author="Sahil",
     author_email="sahil85.10s@gmail.com",

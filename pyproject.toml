@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "comet_labs"                 # Name of your package
-version = "0.1.2"                 # Version
+version = "0.1.3"                 # Version
 description = "A Python package for comet-related functionalities"
 authors = ["Sahil <sahil85.10s@gmail.com>"]
 license = "MIT"
@@ -11,6 +11,7 @@ keywords = ["git", "ai", "commit-messages"]
 
 [tool.poetry.dependencies]
 python = "^3.8"                   # Python version compatibility
+textblob = "^0.17.1"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
