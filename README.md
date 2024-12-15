@@ -135,7 +135,7 @@ We welcome contributions to improve Comet-Labs! ❤️
 1. Fork the repository on GitHub.
 2. Clone your fork locally:
    ```bash
-   git clone https://github.com/your-username/comet-labs.git
+   git clone https://github.com/Sahilsingh0808/comet.git
    ```
 3. Install dependencies:
    ```bash
@@ -147,7 +147,7 @@ We welcome contributions to improve Comet-Labs! ❤️
    ```
 
 #### **Want to Help?**
-- Report bugs or suggest features via [GitHub Issues](https://github.com/your-repo/comet-labs/issues).
+- Report bugs or suggest features via [GitHub Issues](https://github.com/Sahilsingh0808/comet/issues).
 - Submit a pull request with your improvements.
 
 ---
@@ -180,9 +180,9 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 
 ### **Links**
 
-- **GitHub Repository**: [Comet-Labs on GitHub](https://github.com/your-repo/comet-labs)
+- **GitHub Repository**: [Comet-Labs on GitHub](https://github.com/Sahilsingh0808/comet)
 - **PyPI Package**: [Comet-Labs on PyPI](https://pypi.org/project/comet-labs)
-- **Issues & Feedback**: [Report an Issue](https://github.com/your-repo/comet-labs/issues)
+- **Issues & Feedback**: [Report an Issue](https://github.com/Sahilsingh0808/comet/issues)
 
 ---
 
