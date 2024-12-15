@@ -64,7 +64,7 @@ comet-labs credits
 |-------------------------|-----------------------------------------------------------------------------|
 | `comet-labs initialize` | Interactive setup for OpenAI API, Jira integration, and NLP resources.     |
 | `comet-labs run`        | Analyze git changes and generate commit messages.                          |
-| `comet-labs credits`    | View project credits and a heartfelt dedication to the creator’s girlfriend.|
+| `comet-labs credits`    | View project credits.|
 
 ---
 
@@ -162,13 +162,6 @@ A: Yes! Jira integration is optional and can be configured later by re-running `
 
 #### Q: Does Comet-Labs store my API keys or credentials?
 A: No, we respect your privacy. All keys are securely stored locally in a `.env` file.
-
----
-
-### **Credits**
-
-💖 Dedicated to the creator’s girlfriend, the brightest star in his universe. 💖  
-"Just like comets light up the night sky, you've brightened my life." 🌟
 
 ---
 

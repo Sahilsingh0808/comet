@@ -6,7 +6,7 @@ with open("README.md", "r", encoding="utf-8") as f:
 
 setup(
     name="comet_labs",  # Your package name
-    version="0.1.4",
+    version="0.1.5",
     description="A CLI tool for AI-driven commit messages and Jira integration",
     long_description=long_description,
     long_description_content_type="text/markdown",
